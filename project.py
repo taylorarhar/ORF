@@ -46,14 +46,18 @@ def reverse_complement(sequence):
 
 #[line[i:i+n] for i in range(0, len(line), n)]
 
-def find_start(sequence):
+def find_codons(sequence):
 	codons = []
 
 	for i in range(0, len(sequence), 3):
 		codons.append(sequence[i:i+3])
+	return codons
 
-	print codons.index("ATG#")
-	return start_index
+#def find_ORF(codons):
+
+
+	#print codons.index("ATG")
+	#return start_index
 
 # def find_stop(sequence):
 # 	return stop_index
